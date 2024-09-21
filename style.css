@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0; 
+    
+}
+
+    /* .hero-image {
+        background-image: url("bookstore.jpeg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      } */
+
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    text-align: center; 
+}
+
+.highlight {
+    color: hsl(352, 92%, 52%); 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: rgb(18, 1, 1);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out; 
+}
+
+nav a:hover {
+    color: #0755ff; 
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}

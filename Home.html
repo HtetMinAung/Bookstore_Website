@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Heart - TMC Student Club</title>
+<link rel="stylesheet" href="style.css">   
+<style>main {
+    padding: 20px 0;
+}
+
+main h2 {
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#featured-books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book {
+    width: 10%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+</style> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to <span class="highlight">Book Heart</span>
+                <img src="images/book.png" alt="book.logo" height="35px" width="30px">
+            </h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Order.php">Order</a></li>
+                <li><a href="UReview.php">Review</a></li>
+                <li><a href="Login.php">Admin Log In</a></li>
+                <hr style="color: #333;
+                border-bottom: 2px solid #333;">
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Featured Books</h2>
+
+        <!-- Featured Books Carousel -->
+        <div id="featured-books">
+            <!-- Sample Book 1 -->
+            <div class="book">
+                <img src="images/harry_potter.jpeg" alt="Book 1" height="200" width="200">
+                <h5>Harry Potter and the Philosopher's stone</h5>   
+                <p>Author: JK Rowling</p>
+                <button onclick="window.location.href = 'order.php'">Order</button>
+
+            </div>
+
+            <div class="book">
+                <img src="images/naval.jpeg" alt="Book 2">
+                <h5>The Almanack of Naval Ravikant 2</h5>
+                <p>Naval Ravikant</p>
+                <button>Order</button>
+
+            </div>
+        </div>
+
+        <p>Explore our collection and find the perfect book for you!</p>
+    </main>
+
+    <footer>
+        <center><p>&copy; 2024 Book Heart. All rights reserved.</p></center>
+    </footer>
+</body>
+</html>
